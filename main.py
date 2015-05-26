@@ -73,7 +73,7 @@ def to_base(args):
 
 
 def norm(x):
-    return math.sqrt(dot_product(x, x))
+    return max(0.0001, math.sqrt(dot_product(x, x)))
 
 
 def dot_product(x, y):
